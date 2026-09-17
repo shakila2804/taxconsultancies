@@ -30,6 +30,10 @@ import "./App.css";
 const phone = "+917358009987";
 const enquiryEmail = "synergyaudit9@gmail.com";
 const whatsappLink = `https://wa.me/${phone}?text=Hi%20Tax%20Care%20Consultancy%2C%20I%27d%20like%20to%20know%20more%20about%20your%20tax%20and%20GST%20services.`;
+const pricingEnquiryLink = (title: string, description: string) =>
+  `https://wa.me/${phone}?text=${encodeURIComponent(
+    `Hi Tax Care Consultancy, I'd like to enquire about ${title}. ${description}`,
+  )}`;
 
 const faqItems = [
   [
@@ -872,7 +876,7 @@ function PriceCard({
       </ul>
       <a
         className={`button ${featured ? "button-green" : "button-outline"}`}
-        href={whatsappLink}
+        href={pricingEnquiryLink(title, description)}
         target="_blank"
         rel="noreferrer"
       >
