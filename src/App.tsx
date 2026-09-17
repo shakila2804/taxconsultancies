@@ -632,9 +632,9 @@ function App() {
               <ContactCard
                 icon={Camera}
                 label="Instagram"
-                value="@_synergy_statkare_"
+                value="@_synergy_statkare"
                 note="Tax tips and updates"
-                href="https://www.instagram.com/_synergy_statkare_"
+                href="https://www.instagram.com/_synergy_statkare"
               />
               <ContactCard
                 icon={MapPin}
