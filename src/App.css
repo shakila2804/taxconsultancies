@@ -100,12 +100,14 @@ a {
     width: 38px;
     height: 38px;
     border-radius: 9px;
-    background: url('/sk-logo.svg') center / cover no-repeat;
-    font-size: 0;
+    overflow: hidden;
 }
 
-.brand-mark::after {
-    content: none;
+.brand-mark img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .nav-links {

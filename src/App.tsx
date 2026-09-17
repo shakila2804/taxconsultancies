@@ -24,6 +24,7 @@ import {
   Sparkles,
   X,
 } from "lucide-react";
+import logo from "./assets/logo.png";
 import "./App.css";
 
 const phone = "+917358009987";
@@ -106,7 +107,9 @@ function App() {
       {/* <div className="topbar"><span>Chennai, Tamil Nadu · GST · Income Tax · Accounting</span><span>Trusted by 20+ businesses <Check size={13} /></span></div> */}
       <nav className="nav shell">
         <a className="brand" href="#top">
-          <span className="brand-mark">T</span>
+          <span className="brand-mark">
+            <img src={logo} alt="Tax Care Consultancy logo" />
+          </span>
           <span>
             Tax Care <small>CONSULTANCY</small>
           </span>
@@ -724,7 +727,9 @@ function App() {
         <div className="shell footer-inner">
           <div className="footer-brand">
             <a className="brand" href="#top">
-              <span className="brand-mark">T</span>
+              <span className="brand-mark">
+                <img src={logo} alt="Tax Care Consultancy logo" />
+              </span>
               <span>
                 Tax Care <small>CONSULTANCY</small>
               </span>
